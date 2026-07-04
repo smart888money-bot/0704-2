@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>銀髮族居家收納困擾調查問卷</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            font-size: 20px; /* 大字體照顧長輩視力 */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        p.intro {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        /* 圖片區塊樣式 */
+        .banner-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .banner-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .question-block {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+        .question-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .option-label {
+            display: block;
+            margin-bottom: 12px;
+            padding: 12px 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #dcdcdc;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .option-label:hover {
+            background-color: #e9ecef;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            transform: scale(1.5); /* 放大選項按鈕，方便手指點擊 */
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        }
+        .submit-btn:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 頂部圖片 -->
+    <div class="banner-container">
+        <img src="https://meee.com.tw/qh8frC8" alt="銀髮族居家收納困擾調查" class="banner-img">
+    </div>
+
+    <h1>銀髮族居家收納困擾調查</h1>
+    <p class="intro">您好！這是一份關心長輩居家生活與收納狀況的問卷，請依據您的真實感受填寫，謝謝您的協助！</p>
+    
+    <form action="#" method="post" onsubmit="alert('問卷已成功提交！謝謝您的填寫。'); return false;">
+        
+        <!-- 題1 -->
+        <div class="question-block">
+            <div class="question-title">1. 在日常生活中，您覺得哪一個空間的物品最難整理或收納？（單選）</div>
+            <label class="option-label"><input type="radio" name="q1" value="客廳" required> 客廳</label>
+            <label class="option-label"><input type="radio" name="q1" value="廚房"> 廚房</label>
+            <label class="option-label"><input type="radio" name="q1" value="臥室（如衣櫃）"> 臥室（如衣櫃）</label>
+            <label class="option-label"><input type="radio" name="q1" value="浴室"> 浴室</label>
+            <label class="option-label"><input type="radio" name="q1" value="其他"> 其他</label>
+        </div>
+
+        <!-- 題2 -->
+        <div class="question-block">
+            <div class="question-title">2. 在進行收納整理時，您身體最常感到吃力或不舒服的地方是什麼？（複選）</div>
+            <label class="option-label"><input type="checkbox" name="q2" value="物品太重，搬不動"> 物品太重，搬不動</label>
+            <label class="option-label"><input type="checkbox" name="q2" value="櫃子太高，拿不到也看不太到"> 櫃子太高，拿不到也看不太到</label>
+            <label class="option-label"><input type="checkbox" name="q2" value="要蹲下或彎腰拿深處的物品，體力吃不消"> 要蹲下或彎腰拿深處的物品，體力吃不消</label>
+            <label class="option-label"><input type="checkbox" name="q2" value="視力不好，找東西很費心力"> 視力不好，找東西很費心力</label>
+            <label class="option-label"><input type="checkbox" name="q2" value="沒有特別覺得吃力"> 沒有特別覺得吃力</label>
+        </div>
+
+        <!-- 題3 -->
+        <div class="question-block">
+            <div class="question-title">3. 您認為造成家中物品堆積、難以斷捨離的主要原因是什麼？（複選）</div>
+            <label class="option-label"><input type="checkbox" name="q3" value="覺得東西留著以後還用得到（如舊衣服、塑膠袋）"> 覺得東西留著以後還用得到（如舊衣服、塑膠袋）</label>
+            <label class="option-label"><input type="checkbox" name="q3" value="充滿紀念價值的物品太多，捨不得丟"> 充滿紀念價值的物品太多，捨不得丟</label>
+            <label class="option-label"><input type="checkbox" name="q3" value="家人或孩子留下來的東西，不敢擅自處理"> 家人或孩子留下來的東西，不敢擅自處理</label>
+            <label class="option-label"><input type="checkbox" name="q3" value="不知道該怎麼分類或丟棄（如大型家具、電子垃圾）"> 不知道該怎麼分類或丟棄（如大型家具、電子垃圾）</label>
+        </div>
+
+        <!-- 題4 -->
+        <div class="question-block">
+            <div class="question-title">4. 對您來說，目前的收納櫃或家具設計，最大的不便是？（單選）</div>
+            <label class="option-label"><input type="radio" name="q4" value="抽屜或櫃門太重、太緊，很難拉開" required> 抽屜或櫃門太重、太緊，很難拉開</label>
+            <label class="option-label"><input type="radio" name="q4" value="櫃子內部太深，後面的東西拿不到"> 櫃子內部太深，後面的東西拿不到</label>
+            <label class="option-label"><input type="radio" name="q4" value="格子做太大或太高，沒有適當的分層"> 格子做太大或太高，沒有適當的分層</label>
+            <label class="option-label"><input type="radio" name="q4" value="沒有不便，覺得挺好用的"> 沒有不便，覺得挺好用的</label>
+        </div>
+
+        <!-- 題5 -->
+        <div class="question-block">
+            <div class="question-title">5. 如果未來有專為銀髮族設計的收納協助，您最希望獲得什麼幫助？（簡答）</div>
+            <textarea name="q5" rows="4" placeholder="例如：希望有免費的到府整理服務、或是更輕便省力的矮櫃家具..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">提交問卷</button>
+    </form>
+</div>
+
+</body>
+</html>
